@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "SF Espresso Shack";
+  src: url("/assets/fonts/SFEspressoShack.ttf");
+}
+
+@font-face {
+  font-family: "STRATEGYCIDE";
+  src: url("/assets/fonts/STRATEGYCIDE.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c28b64;
+}
+
+ul {
+  padding-inline-start: 0;
+}

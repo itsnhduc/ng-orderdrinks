@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,9 +12,8 @@ import { SelectionComponent } from './components/selection/selection.component';
 import { ReviewComponent } from './components/review/review.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { rootReducer } from './reducers/rootReducer';
-import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { SelectionActions } from './actions/selection.actions';
+import { DrinkComponent } from './components/drink/drink.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { SelectionActions } from './actions/selection.actions';
     HeaderComponent,
     SelectionComponent,
     ReviewComponent,
-    FooterComponent
+    FooterComponent,
+    DrinkComponent
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     AppRoutingModule,
     StoreModule.forRoot(rootReducer),
     StoreDevtoolsModule.instrument()

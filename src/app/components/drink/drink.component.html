@@ -1,0 +1,4 @@
+<div class="drink">
+  <div class="drink-name {{drink.type.toLowerCase()}}" fxFlex="85" fxLayoutAlign="left center" (click)="this.onAddClick(drink)">{{drink.name}}</div>
+  <div class="drink-quantity neutral" fxFlex="15" fxLayoutAlign="center center" (click)="this.onSubtractClick(drink)">{{drink.quantity}}</div>
+</div>

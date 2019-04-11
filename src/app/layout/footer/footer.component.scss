@@ -1,0 +1,22 @@
+$buttonHeight: 100px;
+
+footer,
+footer:hover,
+footer:focus {
+  padding-bottom: $buttonHeight;
+
+  button {
+    width: 100vw;
+    height: $buttonHeight;
+    font-size: 40px;
+    font-family: "STRATEGYCIDE", Arial, Helvetica, sans-serif;
+    background-color: #230e0b;
+    border: none;
+    border-top: 5px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    cursor: pointer;
+  }
+}

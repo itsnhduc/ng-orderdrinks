@@ -15,9 +15,6 @@ export class ChangeQuantityAction implements SelectionAction {
   readonly type = SelectionActionType.CHANGE_QUANTITY;
   constructor(public payload: { drink: IDrink, offset: number }) { }
 }
-export class ClearAllAction implements SelectionAction {
-  readonly type = SelectionActionType.CLEAR_ALL;
-}
 
 @Injectable()
 export class SelectionActions {
@@ -25,8 +22,5 @@ export class SelectionActions {
 
   changeQuantity(drink: IDrink, offset: number) {
     this.store.dispatch(new ChangeQuantityAction({ drink, offset }));
-  }
-  clearAll() {
-    this.store.dispatch(new ClearAllAction());
   }
 }

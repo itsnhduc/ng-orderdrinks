@@ -1,8 +1,8 @@
-<ul>
-  <div *ngIf="allDrinks.length !== 0; else elseBlock">
-    <li *ngFor="let drink of allDrinks">
-      {{drink.type.toUpperCase()}} - {{drink.name}} => {{drink.quantity}}
-    </li>
-  </div>
-  <ng-template #elseBlock>You have not selected any drink yet.</ng-template>
+<ul *ngIf="allDrinks.length !== 0; else elseBlock" fxLayout="row wrap" fxLayoutAlign="center" fxFlexFill>
+  <li *ngFor="let drink of allDrinks" fxFlex="100">
+    <app-drink [interactive]="false" [drink]="drink"></app-drink>
+  </li>
 </ul>
+<ng-template #elseBlock>
+  <span class="no-drink" fxLayout="row" fxLayoutAlign="center">You have not selected any drink yet.</span>
+</ng-template>

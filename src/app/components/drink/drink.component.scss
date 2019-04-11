@@ -1,0 +1,27 @@
+.drink {
+  height: 100px;
+  padding: 5px;
+  user-select: none;
+}
+
+.cold,
+.cold:hover,
+.cold:focus {
+  background-color: #618fca;
+  border-color: #618fca;
+}
+.hot,
+.hot:hover,
+.hot:focus {
+  background-color: #b61e23;
+  border-color: #b61e23;
+}
+
+.drink-name {
+  padding-left: 20px;
+}
+
+.drink-quantity {
+  background-color: #965a3e;
+  border-color: #965a3e;
+}

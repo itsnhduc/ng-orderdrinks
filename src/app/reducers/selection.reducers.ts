@@ -2,6 +2,10 @@ import { SelectionAction, SelectionActionType, ChangeQuantityAction } from '../a
 import { ISelectionStore } from '../models/ISelectionStore';
 import { modifyQuantity, allDrinks } from './selection.helpers';
 
+function compareString(s1: string, s2: string) {
+  return s1 > s2 ? 1 : (s1 < s2 ? -1 : 0);
+}
+
 function getAllDrinks() {
   return allDrinks.map(d => ({...d, quantity: 0}));
 }
