@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href 'https://itsnhduc.github.io/ng-orderdrinks/' && ngh --dir dist\\ng-order-drinks"
+    "deploy": "ng build --prod --base-href https://itsnhduc.github.io/ng-orderdrinks/ && ngh --dir dist/ng-order-drinks"
   },
   "private": true,
   "dependencies": {
