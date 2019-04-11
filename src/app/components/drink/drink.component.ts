@@ -1,11 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IDrink } from 'src/app/models/ISelectionStore';
 import { SelectionActions } from 'src/app/actions/selection.actions';
+import { pulseOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-drink',
   templateUrl: './drink.component.html',
-  styleUrls: ['./drink.component.scss']
+  styleUrls: ['./drink.component.scss'],
+  animations: [
+    pulseOnEnterAnimation({ duration: 400, scale: 1.03 })
+  ]
 })
 export class DrinkComponent implements OnInit {
 
