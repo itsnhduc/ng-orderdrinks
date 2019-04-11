@@ -1,5 +1,5 @@
-import { footerReducer } from './footer.reducers';
+import { selectionReducer } from './selection.reducers';
 
 export const rootReducer = {
-  footerStore: footerReducer
+  selectionStore: selectionReducer
 }
